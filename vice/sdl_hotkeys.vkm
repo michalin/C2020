@@ -1,0 +1,113 @@
+# VICE hotkey mapping file for C2020
+#
+# A hotkey map is read in as a patch to the current map.
+#
+# File format:
+# - comment lines start with '#'
+# - keyword lines start with '!keyword'
+# - normal line has 'keynum path&to&menuitem'
+#
+# Keywords and their lines are:
+# '!CLEAR'    clear all mappings
+#
+# Modifier offsets:
+# SHIFT: 512
+# RESTORE: 1024
+# CTRL: 2048
+# CBM: 
+
+!CLEAR
+
+# Special keymaps supported by C2020 
+# CTRL+F1
+2330 Drive&Attach disk image to drive 8
+# CTRL+F3
+2332 Machine settings&Joystick settings&Swap joystick ports
+# CTRL+F5
+2334 Reset&Hard
+# CTRL+F7 288
+2336 Quit emulator
+
+
+# RESTORE+0
+1072 Drive&Attach disk image to drive 10
+# RESTORE+1
+1073 Drive&Attach disk image to drive 11
+# RESTORE+4
+1076 Printer&Printer #4 form feed
+# RESTORE+5
+1077 Printer&Printer #5 form feed
+# RESTORE+6
+1078 Printer&Printer #6 form feed
+# RESTORE+8
+1080 Drive&Attach disk image to drive 8
+# RESTORE+9
+1081 Drive&Attach disk image to drive 9
+
+# RESTORE+A
+1121 Autostart image
+# RESTORE+B
+1122 Statusbar
+# RESTORE+C
+1123 Cartridge&Attach CRT image
+# RESTORE+D
+1124 Video settings&Size settings&Fullscreen
+# RESTORE+E
+1125 Snapshot&Set recording milestone
+# RESTORE+H
+1128 Monitor&Start monitor
+# RESTORE+I
+1129 Drive&Fliplist settings&Add current image to fliplist
+# RESTORE+J
+1130 Machine settings&Joystick settings&Swap joystick ports
+# RESTORE+K
+1131 Drive&Fliplist settings&Remove current image from fliplist
+# RESTORE+L
+1132 Snapshot&Load snapshot image
+# RESTORE+M
+1133 Machine settings&Mouse emulation&Grab mouse events
+# RESTORE+N
+1134 Drive&Fliplist settings&Attach next image in fliplist
+# RESTORE+P
+1136 Pause
+# RESTORE+Q
+1137 Quit emulator
+# RESTORE+R
+1138 Reset
+# RESTORE+S
+1139 Snapshot&Save snapshot image
+# RESTORE+T
+1140 Tape&Attach tape image
+# RESTORE+U
+1141 Snapshot&Return to milestone
+# RESTORE+W
+1143 Speed settings&Warp mode
+# RESTORE+Z
+1146 Cartridge&Cartridge freeze
+
+# RESTORE+SHIFT+J
+1642 Machine settings&Joystick settings&Allow keyset joystick
+# RESTORE+SHIFT+N
+3182 Drive&Fliplist settings&Attach previous image in fliplist
+# RESTORE+SHIFT+P
+1648 Advance Frame
+# RESTORE+SHIFT+R
+1650 Save media file
+# RESTORE+SHIFT+S
+1651 Save media file&Create sound recording&Stop recording
+# RESTORE+SHIFT+U
+1653 Machine settings&Joystick settings&Swap userport joystick ports
+
+# RESTORE+F9
+1314 Reset&Soft
+# RESTORE+F10
+1315 Snapshot&Quickload snapshot.vsf
+# RESTORE+F11
+1316 Snapshot&Quicksave snapshot.vsf
+# RESTORE+F12
+1317 Reset&Hard
+
+# RESTORE+Delete
+1151 Edit&Copy to Clipboard
+# RESTORE+Insert
+1301 Edit&Paste from Clipboard

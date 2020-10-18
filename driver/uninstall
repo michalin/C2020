@@ -1,0 +1,25 @@
+#!/bin/sh
+
+if [ $(whoami) != root ]; then
+  echo "Error: must be run as root. Type 'sudo ./install'"
+  exit
+fi
+
+echo "Removing Kernel modules..."
+dtoverlay -r c2020
+sudo sed -i '/dtoverlay=c2020/d' /boot/config.txt
+
+module_dir="/lib/modules/$(uname -r)/kernel/drivers/input/keyboard"
+
+modprobe -r c2020
+depmod -a
+
+rm $module_dir/c2020.ko
+
+setxkbmap -layout us
+keysym_dir="/usr/share/X11/xkb/symbols"
+rm $keysym_dir/c64
+
+sed -i 's/XKBLAYOUT.*/XKBLAYOUT=/gI' /etc/default/keyboard
+
+echo "done"

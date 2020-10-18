@@ -1,0 +1,9 @@
+#!/bin/sh
+
+VICECONFIG=/home/pi/.config/vice
+if [ ! -d "$VICECONFIG" ]; then
+    echo Directory "$VICECONFIG does not exist. Please install Vice first"
+    exit
+fi
+
+cp -vr './vice' '../.config/'

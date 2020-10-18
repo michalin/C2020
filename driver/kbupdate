@@ -1,0 +1,13 @@
+#!/bin/sh
+
+sudo dtc -I dts -O dtb -o /boot/overlays/c2020.dtbo ./c2020.dts
+sudo dtoverlay -r c2020
+sudo dtoverlay c2020
+sudo modprobe -r c2020
+sudo modprobe c2020
+sudo cp X11/c64 /usr/share/X11/xkb/symbols/
+
+echo "now setting c64 layout"
+exec setxkbmap -layout c64
+
+#Call after changing c2020.dts or X11/c64

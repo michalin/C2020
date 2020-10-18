@@ -1,0 +1,51 @@
+default  partial alphanumeric_keys
+xkb_symbols "basic" {
+    modifier_map Shift  { Shift_L, Shift_R };
+
+    include "latin"
+
+    name[Group1]="Commodore VIC-20 & C64";
+
+    key <AE02>	{ [         2,   quotedbl    ]};
+    key <AE06>	{ [         6,   ampersand   ]};
+    key <AE07>	{ [         7,   apostrophe  ]};
+    key <AE08>	{ [         8,   parenleft   ]};
+    key <AE09>	{ [         9,   parenright  ]};
+
+    key <AD07>  { [         u, U, udiaeresis, Udiaeresis ]};
+    key <AD09>  { [         o, O, odiaeresis, Odiaeresis ]};
+    key <AD11>	{ [         at, at, at       ]};
+    key <AD12>  { [         asterisk, asterisk, asterisk ]};
+    key <BKSL>  { [         backslash, pipe, asciitilde ]};
+    key <TAB>   { [         sterling, EuroSign  ]};
+
+    key <AC01>  { [         a, A, adiaeresis, Adiaeresis   ]};
+    key <AC02>  { [         s, S, ssharp   ]};
+    key <AC10>	{ [         semicolon, bracketright, braceright   ]};
+    key <AC11>	{ [         colon, bracketleft, braceleft         ]};
+    
+    key <RGHT>	{ [         Right, Right, Left       ]};
+    key <DOWN>	{ [         Down,  Down, Up          ]};
+    key <DELE>  { [         Delete, Insert           ]};
+    key <SPCE>  { [         space, Tab, Tab       ]};
+
+    key <FK01>    { [         F1, F2, F9   ]};
+    key <FK03>    { [         F3, F4, F10  ]};
+    key <FK05>    { [         F5, F6, F11  ]};
+    key <FK07>    { [         F7, F8, F12  ]};
+    
+    key <KP8>     { [         KP_8, KP_8, Up  ]};
+    key <KP2>     { [         KP_2, KP_2, Down   ]};
+    key <KP4>     { [         KP_4, KP_4, Left   ]};
+    key <KP6>     { [         KP_6, KP_6, Right  ]};
+    key <KP0>     { [         KP_0, KP_0, Return ]};
+    include "level3(ralt_switch)"
+};
+
+# Refer to
+# /usr/include/X11/keysym.h 
+# and /usr/share/X11/xkb/keycodes/evdev
+
+
+
+

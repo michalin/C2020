@@ -1,0 +1,9 @@
+[Unit]
+Description="VIC2020 safe shutdown"
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/autoshutdown.py
+
+[Install]
+WantedBy=multi-user.target

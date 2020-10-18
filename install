@@ -1,0 +1,17 @@
+#!/bin/sh
+
+if [ $(whoami) != root ]; then
+  echo "Error: must be run as root. Type 'sudo ./install'"
+  exit
+fi
+chmod +x autoshutdown.py
+cp -v autoshutdown.service /etc/systemd/user/
+cp -v autoshutdown.py /usr/local/bin/
+systemctl enable /etc/systemd/user/autoshutdown.service
+systemctl start autoshutdown
+
+cd $PWD/driver
+chmod +x install
+exec ./install
+
+

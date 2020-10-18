@@ -1,0 +1,14 @@
+#!/bin/sh
+
+if [ $(whoami) != root ]; then
+  echo "Error: must be run as root. Type 'sudo ./uninstall'"
+  exit
+fi
+
+systemctl stop autoshutdown
+systemctl disable autoshutdown
+rm /etc/systemd/user/autoshutdown.service
+rm /usr/local/bin/autoshutdown.py
+
+
+$PWD/driver/uninstall

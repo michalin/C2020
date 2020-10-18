@@ -1,0 +1,204 @@
+/dts-v1/;
+/plugin/;
+/ {
+    compatible = "brcm,bcm2835", "brcm,bcm2708", "brcm,bcm2709";
+
+    fragment@0 {
+        target-path = "/";
+        __overlay__ {
+            keypad: c2020 {
+                compatible = "gpio-c2020";
+                debounce-delay-ms = <30>;
+                col-scan-delay-us = <10>;
+                keypad,num-rows = <8>;
+                keypad,num-columns = <9>;
+                modifier-scancycle-ms = <10>;
+ 
+                row-gpios = <&gpio 21 0    // 0
+                             &gpio 20 0    // 1
+                             &gpio 16 0  // 2
+                             &gpio 12 0  // 3
+                             &gpio 25 0  // 4
+                             &gpio 24 0  // 5
+                             &gpio 23 0  // 6
+                             &gpio 18 0>; // 7
+
+                col-gpios = <&gpio 26 0   // A
+                             &gpio 19 0   // B
+                             &gpio 13 0  // C
+                             &gpio 6 0   // D
+                             &gpio 5 0  // E
+                             &gpio 22 0  // F
+                             &gpio 27 0  // G 
+                             &gpio 17 0  // H
+                             &gpio 4 0>; // I
+
+            /*
+            Keycodes from /usr/include/linux/input-event-codes.h
+            converted to hex using printf '%02x\n'
+            */
+
+                linux,keymap = <
+                            // colA row0 KEY_1
+                            0x00000002
+                            // colA row1 KEY_BACKSPACE (Arrow Left)
+                            0x0100000e
+                            // colA row2 KEY_LEFTCTRL (CTRL)
+                            0x0200101d
+                            // colA row3 KEY_ESC (RUN/STOP)
+                            0x03000001
+                            // colA row4 KEY_SPACE
+                            0x04000039
+                            // colA row5 KEY_RIGHTALT (C=)
+                            0x05000064
+                            // colA row6 KEY_Q
+                            0x06000010
+                            // colA row7 KEY_2 
+                            0x07000003                            
+
+                            // colB row0 KEY_3
+                            0x00010004
+                            // colB row1 KEY_W
+                            0x01010011
+                            // colB row2 KEY_A
+                            0x0201001e
+                            // colB row3 KEY_LEFTSHIFT
+                            0x0301002a
+                            // colB row4 KEY_Z
+                            0x0401002c
+                            // colB row5 KEY_S 
+                            0x0501001f
+                            // colB row6 KEY_E 
+                            0x06010012
+                            // colB row7 KEY_4
+                            0x07010005
+                            
+                            // colC row0 KEY_5
+                            0x00020006
+                            // colC row1 KEY_R 
+                            0x01020013
+                            // colC row2 KEY_D 
+                            0x02020020
+                            // colC row3 KEY_X
+                            0x0302002d
+                            // colC row4 KEY_C 
+                            0x0402002e
+                            // colC row5 KEY_F 
+                            0x05020021
+                            // colC row6 KEY_T 
+                            0x06020014
+                            // colC row7 KEY_6
+                            0x07020007
+
+                            // colD row0 KEY_7
+                            0x00030008
+                            // colD row1 KEY_Y
+                            0x01030015
+                            // colD row2 KEY_G
+                            0x02030022
+                            // colD row3 KEY_V
+                            0x0303002f
+                            // colD row4 KEY_B
+                            0x04030030
+                            // colD row5 KEY_H 
+                            0x05030023
+                            // colD row6 KEY_U
+                            0x06030016
+                            // colD row7 KEY_8
+                            0x07030009
+
+                            // colE row0 KEY_9
+                            0x0004000a
+                            // colE row1 KEY_I 
+                            0x01040017
+                            // colE row2 KEY_J
+                            0x02040024
+                            // colE row3 KEY_N
+                            0x03040031
+                            // colE row4 KEY_M 
+                            0x04040032
+                            // colE row5 KEY_K
+                            0x05040025
+                            // colE row6 KEY_O 
+                            0x06040018
+                            // colE row7 KEY_0
+                            0x0704000b
+
+                            // colF row0 KEY_KPPLUS
+                            0x0005004E
+                            // colF row1 KEY_P 
+                            0x01050019
+                            // colF row2 KEY_L 
+                            0x02050026
+                            // colF row3 KEY_COMMA
+                            0x03050033
+                            // colF row4 KEY_DOT
+                            0x04050034
+                            // colF row5 KEY_COLON (;)
+                            0x05050028
+                            // colF row6 KEY_LEFTBRACE (@)
+                            0x0605001a
+                            // colF row7 KEY_MINUS
+                            0x0705000c
+
+                            // colG row0 KEY_TAB (Pound)
+                            0x0006000f
+                            // colG row1 KEY_RIGHTBRACE (*)
+                            0x0106001b
+                            // colG row2 KEY_SEMICOLON
+                            0x02060027
+                            // colG row3 KEY_SLASH
+                            0x03060035
+                            // colG row4 KEY_RIGHTSHIFT
+                            0x04061036
+                            // colG row5 KEY_EQUAL
+                            0x0506000d
+                            // colG row6 KEY_BACKSLASH (Arrow Up) 
+                            0x0606002b
+                            // colG row7 KEY_HOME
+                            0x07060066   
+                       
+                            //colH row0 KEY_DELETE (INST/DEL)
+                            0x0007006f
+                            //colH row1 KEY_ENTER
+                            0x0107001c
+                            //colH row2 KEY_RIGHT 
+                            0x0207006a
+                            //colH row3 KEY_DOWN
+                            0x0307006c
+                            //colH row4 KEY_F1
+                            0x0407003b
+                            //colH row5 KEY_F3
+                            0x0507003d
+                            //colH row6 KEY_F5
+                            0x0607003f
+                            //colH row7 KEY_F7
+                            0x07070041
+
+                            //colI row0 KEY_KP8 (Joy Forward)
+                            0x00080048
+                            //colI row1	KEY_KP2 (Joy Back)
+                            0x01080050
+                            //colI row2 KEY_KP4 (Joy LEFT)
+                            0x0208004b
+                            //colI row3 KEY_KP6 (Joy RIGHT)
+                            0x0308004d
+                            //colI row4 KEY_KP0 (Joy FIRE)
+                            0x04080052
+                            //colI row5 reserved
+                            0x0508001c
+                            //colI row6 reserved
+                            0x0608001c
+                            //colI row7 KEY_LEFTALT (restore)
+                            0x07080038
+                        >;
+                 };
+              };
+           };
+      };
+
+/* 
+sudo dtc -I dts -O dtb -o /boot/overlays/c2020.dtbo c2020.dts
+dtc -I fs /sys/firmware/devicetree/base | less
+ */
+

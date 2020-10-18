@@ -1,0 +1,34 @@
+#!/bin/sh
+
+if [ $(whoami) != root ]; then
+  echo "Error: must be run as root. Type 'sudo ./install'"
+  exit
+fi
+
+echo "Installing keyboard driver..."
+dtc -I dts -O dtb -o /boot/overlays/c2020.dtbo c2020.dts
+if ! grep -q c2020 "/boot/config.txt"; then
+	echo 'dtoverlay=c2020' | sudo tee -a /boot/config.txt
+fi
+
+dtoverlay c2020
+
+module_dir="/lib/modules/$(uname -r)/kernel/drivers/input/keyboard"
+
+if [ ! -f c2020.ko ]; then
+  echo "Driver file does not exist, trying to build from source"
+  apt install --yes raspberrypi-kernel-headers 
+  make all
+fi
+
+cp -v c2020.ko $module_dir/
+depmod -a
+modprobe c2020
+
+keysym_dir="/usr/share/X11/xkb/symbols"
+cp -v X11/c64 $keysym_dir/
+setxkbmap -layout c64
+
+sed -i 's/XKBLAYOUT.*/XKBLAYOUT=c64/gI' /etc/default/keyboard
+
+echo "...done"
