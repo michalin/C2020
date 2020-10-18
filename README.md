@@ -52,6 +52,9 @@ $ ./c64.sh
 The Autoshutdown circuit can be built with generic components. It should be noted that the bridge rectifier, the relay and the diode D1 should be able to withstand currents up to 1A, and the step-down converter should be able to deliver output currents up to two 2A. You can use relays with coil voltages other than 5V, if you connect PIN 4 to the power input of the step down converter instead and make sure that its maximal coil voltage is not exceeded.
 Autoshutdown requires the keyboard driver module to be installed and loaded to function.
 
+## Joystick
+One legacy Atari or Commodore joystick is supported. A second joystick can be connected via USB. 
+
 ## More
 Key Mappings for X11 and Vice:
 
