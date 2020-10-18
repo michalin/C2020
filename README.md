@@ -41,7 +41,7 @@ $ sudo make install
 ```
 - Install configuration files to adapt Vice to the C2020:
 ```
-$ ./vicinstall
+$ ./viceinstall
 ```
 - Start C64 emulation:
 ```
@@ -54,3 +54,10 @@ Autoshutdown requires the keyboard driver module to be installed and loaded to f
 
 ## More
 Key Mappings for X11 and Vice:
+
+[X11 (xkb)]:./driver/keymap.md
+[Vice]: ./vice/hotkeys.md
+[X11 (xkb)]
+
+[Vice]
+
