@@ -25,3 +25,7 @@ Defined in [sdl_hotkeys.vkm]
 |(RUN/STOP)  | Quit Config Menu|
 
 To access the default menu options, press (RESTORE) to enter the configuration menu, then (RESTORE)+(<Key in [sdl_hotkeys.vkm]), i.e. (RESTORE)+(P) to pause.
+
+## Joystick
+This configuration supports one legacy Atari or Commodore Joystick. 
+However, games like "Winter games" switch over to the (non existant) second joystick and cannot be played any more. Press (CTRL)+(f3) to toggle back to the existing joystick in this case.
