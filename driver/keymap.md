@@ -10,6 +10,7 @@ defined in [./X11/c64]
 |(Arrow Up)       |Backslash         |
 |(SH)+(Arrow Up)  |Pipe (\|)       |
 |(C=) + (Arrow Up)|Tilde  (~)        |
+|(SHIFT)+(STERLIG)|Eurosign          |
 |(RESTORE)        |Left Alt          |
 |(RUN/STOP)       |Esc               |
 |(C=)             |Alt Right         |
@@ -17,6 +18,7 @@ defined in [./X11/c64]
 |(C=)+(CRSR U/D)  |Cursor Up         |
 |(CRSR L/R)       |Cursor Right       |
 |(C=)+(CRSR L/R)  |Cursor Left      |
+|(C=)+(SHIFT)     |Tabulator         |		
 
 (SH): Shift
 
