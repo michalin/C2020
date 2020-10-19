@@ -53,7 +53,7 @@ The Autoshutdown circuit can be built with generic components. It should be note
 Autoshutdown requires the keyboard driver module to be installed and loaded to function.
 
 ## Joystick
-One legacy Atari or Commodore joystick is supported. A second joystick can be connected via USB. 
+One legacy Atari or Commodore joystick is supported. A second joystick can be connected via USB. Some games like "Winter games" switch over to the (non existant) second joystick and cannot be played any more. Press (CTRL)+(f3) to toggle back to the existing joystick in this case.
 
 ## More
 Key Mappings for X11 and Vice:
