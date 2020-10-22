@@ -7,7 +7,7 @@ Defined in [sdl_hotkeys.vkm]
 |(CTRL)+(f1) | Mount Floppy    |
 |(CTRL)+(f3) | Toggle Joysticks|
 |(CTRL)+(f5) | Hard Reset      |
-|(CTRL)+(f7) | Quit Vice       |
+|(CTRL)+(f7) | Toggle fullscreen|
 |(RESTORE)   | Vice Config Menu|
 
 ## Vice Configuration Menu
