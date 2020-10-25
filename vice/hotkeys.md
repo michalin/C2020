@@ -1,6 +1,5 @@
 ## Vice Hotkeys
-[sdl_hotkeys.vkm]:sdl_hotkeys.vkm
-Defined in [sdl_hotkeys.vkm]
+Special hotkeys for the C2020
 
 |Commodore Key | Vice Function |
 |-|-|
@@ -9,6 +8,9 @@ Defined in [sdl_hotkeys.vkm]
 |(CTRL)+(f5) | Hard Reset      |
 |(CTRL)+(f7) | Toggle fullscreen|
 |(RESTORE)   | Vice Config Menu|
+
+[sdl_hotkeys.vkm]:sdl_hotkeys.vkm
+See all hotkeys in [sdl_hotkeys.vkm]
 
 ## Vice Configuration Menu
 |Commodore Key |Menu Function |
@@ -23,8 +25,6 @@ Defined in [sdl_hotkeys.vkm]
 |(INST/DEL)  | Cancel    |
 |(CLR/HOME)  | Home      |
 |(RUN/STOP)  | Quit Config Menu|
-
-To access the default menu options, press (RESTORE) to enter the configuration menu, then (RESTORE)+(<Key in [sdl_hotkeys.vkm]), i.e. (RESTORE)+(P) to pause.
 
 ## Joystick
 This configuration supports one legacy Atari or Commodore Joystick. 
