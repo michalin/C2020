@@ -12,7 +12,7 @@
 #
 # Modifier offsets:
 # SHIFT: 512
-# RESTORE: 1024
+# CTRL: 1024
 # CTRL: 2048
 # CBM: 
 
@@ -25,89 +25,89 @@
 2332 Machine settings&Joystick settings&Swap joystick ports
 # CTRL+F5
 2334 Reset&Hard
-# CTRL+F7
+# CTRL+F7 
 2336 Video settings&Size settings&Fullscreen
 
 
-# RESTORE+0
-1072 Drive&Attach disk image to drive 10
-# RESTORE+1
-1073 Drive&Attach disk image to drive 11
-# RESTORE+4
-1076 Printer&Printer #4 form feed
-# RESTORE+5
-1077 Printer&Printer #5 form feed
-# RESTORE+6
-1078 Printer&Printer #6 form feed
-# RESTORE+8
-1080 Drive&Attach disk image to drive 8
-# RESTORE+9
-1081 Drive&Attach disk image to drive 9
+# CTRL+0
+2096 Drive&Attach disk image to drive 10
+# CTRL+1
+2097 Drive&Attach disk image to drive 11
+# CTRL+4
+2100 Printer&Printer #4 form feed
+# CTRL+5
+2101 Printer&Printer #5 form feed
+# CTRL+6
+2102 Printer&Printer #6 form feed
+# CTRL+8
+2104 Drive&Attach disk image to drive 8
+# CTRL+9
+2105 Drive&Attach disk image to drive 9
 
-# RESTORE+A
-1121 Autostart image
-# RESTORE+B
-1122 Statusbar
-# RESTORE+C
-1123 Cartridge&Attach CRT image
-# RESTORE+D
-1124 Video settings&Size settings&Fullscreen
-# RESTORE+E
-1125 Snapshot&Set recording milestone
-# RESTORE+H
-1128 Monitor&Start monitor
-# RESTORE+I
-1129 Drive&Fliplist settings&Add current image to fliplist
-# RESTORE+J
-1130 Machine settings&Joystick settings&Swap joystick ports
-# RESTORE+K
-1131 Drive&Fliplist settings&Remove current image from fliplist
-# RESTORE+L
-1132 Snapshot&Load snapshot image
-# RESTORE+M
-1133 Machine settings&Mouse emulation&Grab mouse events
-# RESTORE+N
-1134 Drive&Fliplist settings&Attach next image in fliplist
-# RESTORE+P
-1136 Pause
-# RESTORE+Q
-1137 Quit emulator
-# RESTORE+R
-1138 Reset
-# RESTORE+S
-1139 Snapshot&Save snapshot image
-# RESTORE+T
-1140 Tape&Attach tape image
-# RESTORE+U
-1141 Snapshot&Return to milestone
-# RESTORE+W
-1143 Speed settings&Warp mode
-# RESTORE+Z
-1146 Cartridge&Cartridge freeze
+# CTRL+A
+2145 Autostart image
+# CTRL+B
+2146 Statusbar
+# CTRL+C
+2147 Cartridge&Attach CRT image
+# CTRL+D
+2148 Video settings&Size settings&Fullscreen
+# CTRL+E
+2149 Snapshot&Set recording milestone
+# CTRL+H
+2152 Monitor&Start monitor
+# CTRL+I
+2153 Drive&Fliplist settings&Add current image to fliplist
+# CTRL+J
+2154 Machine settings&Joystick settings&Swap joystick ports
+# CTRL+K
+2155 Drive&Fliplist settings&Remove current image from fliplist
+# CTRL+L
+2156 Snapshot&Load snapshot image
+# CTRL+M
+2157 Machine settings&Mouse emulation&Grab mouse events
+# CTRL+N
+2158 Drive&Fliplist settings&Attach next image in fliplist
+# CTRL+P
+2160 Pause
+# CTRL+Q
+2161 Quit emulator
+# CTRL+R
+2162 Reset
+# CTRL+S
+2163 Snapshot&Save snapshot image
+# CTRL+T
+2164 Tape&Attach tape image
+# CTRL+U
+2165 Snapshot&Return to milestone
+# CTRL+W
+2147 Speed settings&Warp mode
+# CTRL+Z
+2150 Cartridge&Cartridge freeze
 
-# RESTORE+SHIFT+J
-1642 Machine settings&Joystick settings&Allow keyset joystick
-# RESTORE+SHIFT+N
-3182 Drive&Fliplist settings&Attach previous image in fliplist
-# RESTORE+SHIFT+P
-1648 Advance Frame
-# RESTORE+SHIFT+R
-1650 Save media file
-# RESTORE+SHIFT+S
-1651 Save media file&Create sound recording&Stop recording
-# RESTORE+SHIFT+U
-1653 Machine settings&Joystick settings&Swap userport joystick ports
+# CTRL+SHIFT+J
+2666 Machine settings&Joystick settings&Allow keyset joystick
+# CTRL+SHIFT+N
+4206 Drive&Fliplist settings&Attach previous image in fliplist
+# CTRL+SHIFT+P
+2672 Advance Frame
+# CTRL+SHIFT+R
+2674 Save media file
+# CTRL+SHIFT+S
+2675 Save media file&Create sound recording&Stop recording
+# CTRL+SHIFT+U
+2677 Machine settings&Joystick settings&Swap userport joystick ports
+# CTRL+Delete
+2175 Edit&Copy to Clipboard
+# CTRL+Insert
+2325 Edit&Paste from Clipboard
 
-# RESTORE+F9
+# These hotkeys are only available with an external keyboard
+# ALT+F9
 1314 Reset&Soft
-# RESTORE+F10
+# ALT+F10
 1315 Snapshot&Quickload snapshot.vsf
-# RESTORE+F11
+# ALT CTRL+F11
 1316 Snapshot&Quicksave snapshot.vsf
-# RESTORE+F12
+# ALT+F12
 1317 Reset&Hard
-
-# RESTORE+Delete
-1151 Edit&Copy to Clipboard
-# RESTORE+Insert
-1301 Edit&Paste from Clipboard
